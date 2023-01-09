@@ -1,0 +1,30 @@
+body {
+	margin: 0;
+	display: grid;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+		'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: url('./images/bg-intro-mobile.png');
+	background-color: salmon;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas,
+		'Courier New', monospace;
+	color: #6051b4;
+}
+
+@media screen and (min-width: 768px) {
+	body {
+		background: url('./images/bg-intro-desktop.png');
+		background-color: salmon;
+	}
+	main {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 25% 50% 75% 85%;
+		column-gap: 2rem;
+	}
+}
